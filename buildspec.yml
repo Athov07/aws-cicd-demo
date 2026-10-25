@@ -1,0 +1,16 @@
+
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Preparing build environment"
+
+  build:
+    commands:
+      - bash test.sh
+      - echo "Website tests completed"
+
+artifacts:
+  files:
+    - index.html
